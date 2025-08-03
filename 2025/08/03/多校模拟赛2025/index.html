@@ -13,7 +13,7 @@
 
 
 
-<title>喜欢xyw | zyw and cx&#39;s blog</title>
+<title>多校模拟赛2025 | zyw and cx&#39;s blog</title>
 
 
 
@@ -193,7 +193,7 @@
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">喜欢xyw</h1>
+            <h1 class="post-title">多校模拟赛2025</h1>
             
                 <div class="post-meta">
                     
@@ -202,23 +202,33 @@
 
                     
                         <span class="post-time">
-                        Date: <a href="#">July 19, 2025&nbsp;&nbsp;21:01:45</a>
+                        Date: <a href="#">August 3, 2025&nbsp;&nbsp;13:08:34</a>
                         </span>
                     
-                    
-                        <span class="post-category">
-                    Category:
-                            
-                                <a href="/categories/love/">love</a>
-                            
-                        </span>
                     
                 </div>
             
         </header>
 
         <div class="post-content">
-            <h3 id="zyw怎么这么好，我喜欢死zyw了"><a href="#zyw怎么这么好，我喜欢死zyw了" class="headerlink" title="zyw怎么这么好，我喜欢死zyw了"></a>zyw怎么这么好，我喜欢死zyw了</h3>
+            <h3 id="2025牛客暑期多校训练营6"><a href="#2025牛客暑期多校训练营6" class="headerlink" title="2025牛客暑期多校训练营6"></a>2025牛客暑期多校训练营6</h3><h4 id="E-Array"><a href="#E-Array" class="headerlink" title="E-Array"></a>E-Array</h4><p>给定数组 a 和数组 p。你需要在线处理 q 个操作，操作分为两种类型：</p>
+<ol>
+<li>对于 $l \le i \le r$ ，将元素 $a_i$ 加上 $x$。</li>
+<li>计算$\sum_{i&#x3D;l}^r a_{p_i}$。</li>
+</ol>
+<p>$1 \le n,q \le 10^5$ , $1 \le p_i \le n$</p>
+<p>第一次看过去是没什么思路的。离线算法也没怎么想到，想到分块也不知道怎么分。</p>
+<p>但是直接把$a$和$a_p$分块了，然后考虑散块-整块，整块-整块的影响。比较困难的是整块-整块，题解记了一个$f_{i,j}$表示$a$的第$i$整体$+1$对$a_p$的第$j$块的影响,这样询问$a_p$的第$l$到$r$块时，只需要枚举$a$的每一块$i$，然后$i$对答案的影响即为$lazy_i \sum_{j&#x3D;l}^r f_{i,j}$。</p>
+<p>不过还没想清楚为什么能这么做倒是，先记下来吧。</p>
+<h4 id="H-Knapsack-Problem"><a href="#H-Knapsack-Problem" class="headerlink" title="H-Knapsack Problem"></a>H-Knapsack Problem</h4><p>完全背包，n个物品(a_i,b_i)表示体积和价值。</p>
+<p>f(v)定义为体积为v的背包的最大价值</p>
+<p>求$\sum_{i&#x3D;1}^V f(i) \mod 998244353$。</p>
+<p>$a_i \le 1500$ ,$V \le 10^{18}$</p>
+<p>论文结论题，不过结论值得一记：对每种体积的物品进行去重后（即取同体积价值最大的），只剩下u(令u为a的最大值)种物品。</p>
+<p>定理：对于体积为V的完全背包，存在一种最佳方案使得存在一件物品来自前$\lceil \frac{3u^2}{V} \rceil$件具有最大价值体积比的物品。</p>
+<p>所以对于$&gt;3u^2$的体积，只取价值体积比最大的物品即可。然后相当于把原本$10^{18}$的巨大背包放到了$3u^2$。</p>
+<p>总复杂度$O(u^2\log u)$</p>
+
         </div>
 
         
@@ -232,7 +242,7 @@
                 
                     <p class="copyright-item">
                         <span>Permalink:</span>
-                        <span><a href="http://nixnehc2.github.io/2025/07/19/%E5%96%9C%E6%AC%A2xyw/">http://nixnehc2.github.io/2025/07/19/%E5%96%9C%E6%AC%A2xyw/</a></span>
+                        <span><a href="http://nixnehc2.github.io/2025/08/03/%E5%A4%9A%E6%A0%A1%E6%A8%A1%E6%8B%9F%E8%B5%9B2025/">http://nixnehc2.github.io/2025/08/03/%E5%A4%9A%E6%A0%A1%E6%A8%A1%E6%8B%9F%E8%B5%9B2025/</a></span>
                     </p>
                 
                 
@@ -256,7 +266,7 @@
                 <span class="tag">
                     
                     
-                        <a href="/tags/love/"># love</a>
+                        <a href="/tags/acm/"># acm</a>
                     
                         
                 </span>
@@ -269,10 +279,8 @@
         </section>
         <section class="post-nav">
             
-                <a class="prev" rel="prev" href="/2025/08/03/%E5%A4%9A%E6%A0%A1%E6%A8%A1%E6%8B%9F%E8%B5%9B2025/">多校模拟赛2025</a>
             
-            
-            <a class="next" rel="next" href="/2025/07/19/Test1/">魔幻幸福的一天，记之</a>
+            <a class="next" rel="next" href="/2025/07/19/%E5%96%9C%E6%AC%A2xyw/">喜欢xyw</a>
             
         </section>
 
